@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+       
+    
+        .quiz-body {
+            padding: 2rem;
+        }
+    
+         .quiz-question {
+            border: 2px solid #3c8ae3;
+            border-radius: 44px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+        }
+    
+        .quiz-options {
+            padding: 0;
+            margin: 1rem ;
+        }
+    
+        .quiz-options label {
+            display: block;
+            background-color: #3c8ae3;
+            border: 1px solid #3c8ae3;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        .quiz-options label:hover {
+            background-color: #295a99;
+        }
+    
+        .quiz-options input {
+            display: none;
+        }
+    
+        .quiz-options input:checked + label {
+            background-color: #295a99;
+        }
+    
+        button {
+            background-color: #4caf50;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+    
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+    
+    <title>اللغه العربيه
+    </title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 style="text-align: center; color: #3c8ae3; font-size: 24px; margin-bottom: 20px;">أمتحان اللغة العربية</h1>
+        </div>
+        <div class="quiz-body">
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1.ما هي اللغة التي يتحدث بها الناس في العديد من الدول العربية؟
+
+                    </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q1" id="q1a" value="الفرنسية">
+                            <label for="q1a">الفرنسية</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1b" value="الإنجليزية">
+                            <label for="q1b">الإنجليزية</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1c" value="الفصحى">
+                            <label for="q1c">الفصحى</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1d" value=" الألمانية">
+                            <label for="q1d"> الألمانية</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. ما هي الوحدة الأساسية في بناء الجملة؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q2" id="q2a" value=" الكلمة">
+                            <label for="q2a"> الكلمة</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2b" value="الحرف">
+                            <label for="q2b">الحرف</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2c" value=" الجملة">
+                            <label for="q2c"> الجملة</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2d" value=" النص">
+                            <label for="q2d"> النص</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>3.ما هو الفعل في الجملة التالية: "أكتب القصة"؟
+                    </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q3" id="q3a" value="القصة">
+                            <label for="q3a">القصة</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q3b" value="Berlin">
+                            <label for="q3b">أكتب</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3c" value="أكتب القصة">
+                            <label for="q3c">أكتب القصة</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3d" value=" يكتب">
+                            <label for="q3d"> يكتب</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>4.ما هو الهمزة؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q4" id="q4a" value="الحرف الذي يدل على الفجوة">
+                            <label for="q4a">الحرف الذي يدل على الفجوة</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q4" id="q4b" value=" الحرف الذي يدل على الترقيم">
+                            <label for="q4b"> الحرف الذي يدل على الترقيم</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q4" id="q4c" value="الحرف الذي يدل على الصوت ">
+                            <label for="q4c">الحرف الذي يدل على الصوت</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q4" id="q4d" value="الحرف الذي يدل على السكون">
+                            <label for="q4d">الحرف الذي يدل على السكون</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>5. ما هو المثنى من كلمة "كتاب"؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q5" id="q5a" value="كتابان">
+                            <label for="q5a">كتابان</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q5" id="q5b" value="كتب">
+                            <label for="q5b">كتب</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q5" id="q5c" value="كتبين">
+                            <label for="q5c">كتبين</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q5d" value="كتابي">
+                            <label for="q5d">كتابي</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>6. ما هو معنى المثل العربي "الطيور على أشكالها تقع"؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q6" id="q6a" value="كل شيء يحدث حسب طبيعته">
+                            <label for="q6a">كل شيء يحدث حسب طبيعته</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q6" id="q6b" value="الأشكال تؤثر على سقوط الطيور">
+                            <label for="q6b">الأشكال تؤثر على سقوط الطيور</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q6" id="q6c" value="الطيور تسقط على الأشكال">
+                            <label for="q6c">الطيور تسقط على الأشكال</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q6" id="q6d" value="الطيور تختار أشكالها">
+                            <label for="q6d">الطيور تختار أشكالها</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>7. من هو الشاعر الذي كتب ديوان "ديوان الحكمة"؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q7" id="q7a" value=" أبو الطيب المتنبي">
+                            <label for="q7a"> أبو الطيب المتنبي</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q7" id="q7b" value=" الإمام الشافعي">
+                            <label for="q7b"> الإمام الشافعي</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q7" id="q7c" value=" أحمد شوقي">
+                            <label for="q7c"> أحمد شوقي</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q7" id="q7d" value="جبران خليل جبران">
+                            <label for="q7d">جبران خليل جبران</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>8. ما هو الفرق بين الضمير والاسم؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q8" id="q8a" value="الضمير: يدل على الشخص أو الشيء / الاسم: يشير إلى الشخص أو الشيء">
+                            <label for="q8a">الضمير: يدل على الشخص أو الشيء / الاسم: يشير إلى الشخص أو الشيء</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q8" id="q8b" value=" الضمير: يشير إلى الشخص أو الشيء / الاسم: يدل على الشخص أو الشيء">
+                            <label for="q8b"> الضمير: يشير إلى الشخص أو الشيء / الاسم: يدل على الشخص أو الشيء</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q8" id="q8c" value="الضمير: يشير إلى المكان / الاسم: يشير إلى الزمان">
+                            <label for="q8c">الضمير: يشير إلى المكان / الاسم: يشير إلى الزمان</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q8" id="q8d" value=" الضمير: يدل على الزمان / الاسم: يشير إلى المكان">
+                            <label for="q8d"> الضمير: يدل على الزمان / الاسم: يشير إلى المكان</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>9. ما هو الفرق بين اللغة الفصحى واللهجات العربية؟ </p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q9" id="q9a" value="اللغة الفصحى: لغة رسمية / اللهجات: لغات شعبية">
+                            <label for="q9a">اللغة الفصحى: لغة رسمية / اللهجات: لغات شعبية</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q9" id="q9b" value="اللغة الفصحى: لغة شعبية / اللهجات: لغات رسمية
+                            ">
+                            <label for="q9b">اللغة الفصحى: لغة شعبية / اللهجات: لغات رسمية
+                            </label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q9" id="q19" value="اللغة الفصحى: لغة تراثية / اللهجات: لغات حديثة">
+                            <label for="q1c">اللغة الفصحى: لغة تراثية / اللهجات: لغات حديثة</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q9" id="q9d" value="اللغة الفصحى: لغة دينية / اللهجات: لغات اجتماعية">
+                            <label for="q9d">اللغة الفصحى: لغة دينية / اللهجات: لغات اجتماعية</label>
+                        </li>
+                    </ul>
+                </div>
+                <div class="quiz-question">
+                    <p>10. ما هو الوزن الشعري؟</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q1" id="q10a" value=" الوزن: الحمل الثقيل للكلمات">
+                            <label for="q10a"> الوزن: الحمل الثقيل للكلمات</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q10" id="q10b" value="الوزن: توزيع الضغط على الكلمات في البيت الشعري">
+                            <label for="q10b">الوزن: توزيع الضغط على الكلمات في البيت الشعري</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q10" id="q10c" value="الوزن: طول البيت الشعري">
+                            <label for="q10c">الوزن: طول البيت الشعري</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q10" id="q10d" value="الوزن: تحديد عدد الكلمات في البيت الشعري">
+                            <label for="q10d">الوزن: تحديد عدد الكلمات في البيت الشعري</label>
+                        </li>
+                    </ul>
+                </div>
+
+            </form>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+            <p id="result"></p>
+        </div>
+    </div>
+    <script>
+        function submitQuiz() {
+             form = document.getElementById("quiz-form");
+    
+            const correctAnswers = {
+                q1: "الفرنسية",
+                q2: "الكلمة",
+                q3: "أكتب القصة",
+                q4: "الحرف الذي يدل على الصوت",
+                q5: "كتابان",
+                q6: "كل شيء يحدث حسب طبيعته",
+                q7: "جبران خليل جبران",
+                q8: "الضمير: يدل على الشخص أو الشيء / الاسم: يشير إلى الشخص أو الشيء",
+                q9: "اللغة الفصحى: لغة رسمية / اللهجات: لغات شعبية",
+                q10: "الوزن: توزيع الضغط على الكلمات في البيت الشعري"
+            };
+    
+            let score = 0;
+    
+            if (form.q1.value.toLowerCase() === correctAnswers.q1.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q2.value.toLowerCase() === correctAnswers.q2.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q3.value.toLowerCase() === correctAnswers.q3.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q4.value.toLowerCase() === correctAnswers.q4.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q5.value.toLowerCase() === correctAnswers.q5.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q6.value.toLowerCase() === correctAnswers.q6.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q7.value.toLowerCase() === correctAnswers.q7.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q8.value.toLowerCase() === correctAnswers.q8.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q9.value.toLowerCase() === correctAnswers.q9.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q10.value.toLowerCase() === correctAnswers.q10.toLowerCase()) {
+                score++;
+            }
+    
+            if (confirm("هل أنت متأكد من أنك انتهيت من الاختبار؟")) {
+        alert(`Your score: ${score} out of ${Object.keys(correctAnswers).length}`);
+    }
+    }
+
+    </script>
+    
+</body>
+</html>

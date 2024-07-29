@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Selection</title>
+    <style>
+      
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #342222;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #eee;
+        padding: 10px;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 0 10px;
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+    }
+
+    section {
+        margin: 20px;
+        padding: 20px;
+        background-color: #966d6d;
+        border-radius: 30px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    select {
+        padding: 10px;
+        font-size: 16px;
+        margin-right: 10px; 
+    }
+
+    button {
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #333;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    </Style>
+</head>
+
+<body>
+    <header>
+        <h1>Exam Portal</h1>
+    </header>
+
+    <nav>
+        <a >home </a>
+        <a>About</a>
+        <a>Contact</a>
+    </nav>
+
+    <section>
+        <h2>Select Exam</h2>
+        <form id="examForm">
+            <label for="examSelect">Choose an exam:</label>
+            <select id="examSelect" name="exam">
+                <option value="English">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="computer">Computer</option>
+            </select>
+            <button type="button" onclick="startExam()">Start Exam</button>
+        </form>
+    </section>
+
+    <script>
+        function startExam() {
+           M = document.getElementById("examSelect").value;
+
+            if (M == "English") {
+                window.location.href = "English_exam.html";
+            } else if (M == "arabic") {
+                window.location.href = "arabic_exam.html";
+            } else if (M == "computer") {
+                window.location.href = "computer_exam.html";
+            }
+        }
+    </script>
+</body>
+
+</html>

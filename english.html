@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .quiz-body {
+            padding: 2rem;
+        }
+
+        .quiz-question {
+            border: 2px solid #b2631a;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        .quiz-options {
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .quiz-options label {
+            display: block;
+            background-color: #5f7c9d;
+            border: 1px solid #0e1013;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .quiz-options label:hover {
+            background-color: #30363d;
+        }
+
+        .quiz-options input {
+            display: none;
+        }
+
+        .quiz-options input:checked + label {
+            background-color: #295a99;
+        }
+
+        button {
+            background-color: #529aeb;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #30363d;
+        }
+    </style>
+
+    <title>English</title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 style="text-align: center; color: #9057ae; font-size: 24px; margin-bottom: 20px;">English  exam</h1>
+        </div>
+        <div class="quiz-body">
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. What is the plural form of "child"?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q1" id="q1a" value="childs">
+                            <label for="q1a">childs</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1b" value="children">
+                            <label for="q1b">children</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1c" value="childes">
+                            <label for="q1c">childes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1d" value="childen">
+                            <label for="q1d">childen</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. Which of the following is a modal verb?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q2" id="q2a" value="run">
+                            <label for="q2a">run</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2b" value="can">
+                            <label for="q2b">can</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2c" value="book">
+                            <label for="q2c">book</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2d" value="jump">
+                            <label for="q2d">jump</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. What is the past tense of "eat"?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q3" id="q3a" value="eaten">
+                            <label for="q3a">eaten</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3b" value="ate">
+                            <label for="q3b">ate</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3c" value="eat">
+                            <label for="q3c">eat</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3d" value="eating">
+                            <label for="q3d">eating</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>4. Which sentence is in the passive voice?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q4" id="q4a" value="The cat chased the mouse.">
+                            <label for="q4a">The cat chased the mouse.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q4" id="q4b" value="The mouse was chased by the cat.">
+                            <label for="q4b">The mouse was chased by the cat.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q4" id="q4c" value="I will visit my friend tomorrow.">
+                            <label for="q4c">I will visit my friend tomorrow.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q4" id="q4d" value="She is singing a song.">
+                            <label for="q4d">She is singing a song.</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>5. Which of the following is a relative pronoun?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q5" id="q5a" value="and">
+                            <label for="q5a">and</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q5" id="q5b" value="that">
+                            <label for="q5b">that</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q5" id="q5c" value="but">
+                            <label for="q5c">but</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q5" id="q5d" value="or">
+                            <label for="q5d">or</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>6. Identify the adverb in the following sentence: "She speaks English fluently."</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q6" id="q6a" value="She">
+                            <label for="q6a">She</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q6" id="q6b" value="English">
+                            <label for="q6b">English</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q6" id="q6c" value="speaks">
+                            <label for="q6c">speaks</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q6" id="q6d" value="fluently">
+                            <label for="q6d">fluently</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>7. Choose the correct form of the verb to fill in the blank: "I ____ to the store yesterday."</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q7" id="q7a" value="go">
+                            <label for="q7a">go</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q7" id="q7b" value="went">
+                            <label for="q7b">went</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q7" id="q7c" value="going">
+                            <label for="q7c">going</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q7" id="q7d" value="goes">
+                            <label for="q7d">goes</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>8. What is the comparative form of "good"?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q8" id="q8a" value="goodest">
+                            <label for="q8a">goodest</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q8" id="q8b" value="better">
+                            <label for="q8b">better</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q8" id="q8c" value="gooder">
+                            <label for="q8c">gooder</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q8" id="q8d" value="gooding">
+                            <label for="q8d">gooding</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>9. In the sentence "The car is red," what part of speech is "red"?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q9" id="q9a" value="noun">
+                            <label for="q9a">noun</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q9" id="q9b" value="verb">
+                            <label for="q9b">verb</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q9" id="q9c" value="adjective">
+                            <label for="q9c">adjective</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q9" id="q9d" value="adverb">
+                            <label for="q9d">adverb</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>10. Which of the following is a compound sentence?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q10" id="q10a" value="I enjoy reading books.">
+                            <label for="q10a">I enjoy reading books.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q10" id="q10b" value="Although it was raining, we went for a walk.">
+                            <label for="q10b">Although it was raining, we went for a walk.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q10" id="q10c" value="She is talented and hardworking.">
+                            <label for="q10c">She is talented and hardworking.</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q10" id="q10d" value="The cat sat on the windowsill.">
+                            <label for="q10d">The cat sat on the windowsill.</label>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+            <p id="result"></p>
+        </div>
+    </div>
+
+    <script>
+     
+        let score = 0;
+    
+        
+    function submitQuiz() {
+        const correctAnswers = {
+            q1: "children",
+            q2: "can",
+            q3: "ate",
+            q4: "The mouse was chased by the cat",
+            q5: "that",
+            q6: "fluently",
+            q7: "went",
+            q8: "better",
+            q9: "adjective",
+            q10: "She is talented and hardworking"
+        };
+
+        let score = 0;
+
+        const form = document.getElementById('quiz-form');
+
+        if (form.q1.value.toLowerCase() === correctAnswers.q1.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q2.value.toLowerCase() === correctAnswers.q2.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q3.value.toLowerCase() === correctAnswers.q3.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q4.value.toLowerCase() === correctAnswers.q4.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q5.value.toLowerCase() === correctAnswers.q5.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q6.value.toLowerCase() === correctAnswers.q6.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q7.value.toLowerCase() === correctAnswers.q7.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q8.value.toLowerCase() === correctAnswers.q8.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q9.value.toLowerCase() === correctAnswers.q9.toLowerCase()) {
+            score++;
+        }
+
+        if (form.q10.value.toLowerCase() === correctAnswers.q10.toLowerCase()) {
+            score++;
+        }
+
+        if (confirm("هل أنت متأكد من أنك انتهيت من الاختبار؟")) {
+            alert(`Your score: ${score} out of ${Object.keys(correctAnswers).length}`);
+        }
+    }
+</script>
+
+    
+    
+</body>
+</html>

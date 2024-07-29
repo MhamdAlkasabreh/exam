@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .quiz-body {
+            padding: 2rem;
+        }
+
+        .quiz-question {
+            border: 2px solid #5fbd7e;
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+            padding: 1.5rem;
+        }
+
+        .quiz-options {
+            padding: 0;
+            margin: 1rem 0;
+        }
+
+        .quiz-options label {
+            display: block;
+            background-color: #abc8d1;
+            border: 1px solid #8196b5;
+            border-radius: 4px;
+            margin: 0.5rem 0;
+            padding: 1rem;
+            color: #362a2a;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .quiz-options label:hover {
+            background-color: #9aa6b4;
+        }
+
+        .quiz-options input {
+            display: none;
+        }
+
+        .quiz-options input:checked + label {
+            background-color: #295a99;
+        }
+
+        button {
+            background-color: #48596c;
+            color: white;
+            padding: 1rem 2rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #30363d;
+        }
+    </style>
+
+    <title>Computer </title>
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="quiz-header">
+            <h1 style="text-align: center; color: #484b50; font-size: 24px; margin-bottom: 20px;"> Computer Exam </h1>
+        </div>
+        <div class="quiz-body">
+            <form id="quiz-form">
+                <div class="quiz-question">
+                    <p>1. What does HTML stand for?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q1" id="q1a" value="Hyper Text Markup Language">
+                            <label for="q1a">Hyper Text Markup Language</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1b" value="Hyper Transfer Markup Language">
+                            <label for="q1b">Hyper Transfer Markup Language</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1c" value="High Text Markup Language">
+                            <label for="q1c">High Text Markup Language</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q1" id="q1d" value="High Transfer Markup Language">
+                            <label for="q1d">High Transfer Markup Language</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>2. Which programming language is known for its use in web development?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q2" id="q2a" value="Python">
+                            <label for="q2a">Python</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2b" value="Java">
+                            <label for="q2b">Java</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2c" value="C++">
+                            <label for="q2c">C++</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q2" id="q2d" value="JavaScript">
+                            <label for="q2d">JavaScript</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="quiz-question">
+                    <p>3. What is the purpose of CSS?</p>
+                    <ul class="quiz-options">
+                        <li>
+                            <input type="radio" name="q3" id="q3a" value="Creating databases">
+                            <label for="q3a">Creating databases</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3b" value="Styling web pages">
+                            <label for="q3b">Styling web pages</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3c" value="Writing server-side logic">
+                            <label for="q3c">Writing server-side logic</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="q3" id="q3d" value="Creating mobile apps">
+                            <label for="q3d">Creating mobile apps</label>
+                        </li>
+                    </ul>
+                </div>
+
+                
+
+<div class="quiz-question">
+    <p>4. What does the acronym "CPU" stand for?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q4" id="q4a" value="Central Processing Unit">
+            <label for="q4a">Central Processing Unit</label>
+        </li>
+        <li>
+            <input type="radio" name="q4" id="q4b" value="Computer Personal Unit">
+            <label for="q4b">Computer Personal Unit</label>
+        </li>
+        <li>
+            <input type="radio" name="q4" id="q4c" value="Central Process Unit">
+            <label for="q4c">Central Process Unit</label>
+        </li>
+        <li>
+            <input type="radio" name="q4" id="q4d" value="Central Processor Unit">
+            <label for="q4d">Central Processor Unit</label>
+        </li>
+    </ul>
+</div>
+
+<div class="quiz-question">
+    <p>5. What is the purpose of the "if" statement in programming?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q5" id="q5a" value="To repeat a block of code">
+            <label for="q5a">To repeat a block of code</label>
+        </li>
+        <li>
+            <input type="radio" name="q5" id="q5b" value="To make a decision in code">
+            <label for="q5b">To make a decision in code</label>
+        </li>
+        <li>
+            <input type="radio" name="q5" id="q5c" value="To define a function">
+            <label for="q5c">To define a function</label>
+        </li>
+        <li>
+            <input type="radio" name="q5" id="q5d" value="To include a library">
+            <label for="q5d">To include a library</label>
+        </li>
+    </ul>
+</div>
+
+<div class="quiz-question">
+    <p>6. Which of the following is a valid variable name in most programming languages?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q6" id="q6a" value="123variable">
+            <label for="q6a">123variable</label>
+        </li>
+        <li>
+            <input type="radio" name="q6" id="q6b" value="_variable">
+            <label for="q6b">_variable</label>
+        </li>
+        <li>
+            <input type="radio" name="q6" id="q6c" value="variable-name">
+            <label for="q6c">variable-name</label>
+        </li>
+        <li>
+            <input type="radio" name="q6" id="q6d" value="variable name">
+            <label for="q6d">variable name</label>
+        </li>
+    </ul>
+</div>
+
+<div class="quiz-question">
+    <p>7. What is the purpose of the "for" loop in programming?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q7" id="q7a" value="To make a decision in code">
+            <label for="q7a">To make a decision in code</label>
+        </li>
+        <li>
+            <input type="radio" name="q7" id="q7b" value="To repeat a block of code a specific number of times">
+            <label for="q7b">To repeat a block of code a specific number of times</label>
+        </li>
+        <li>
+            <input type="radio" name="q7" id="q7c" value="To define a function">
+            <label for="q7c">To define a function</label>
+        </li>
+        <li>
+            <input type="radio" name="q7" id="q7d" value="To include a library">
+            <label for="q7d">To include a library</label>
+        </li>
+    </ul>
+</div>
+
+<div class="quiz-question">
+    <p>8. What does the term "API" stand for?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q8" id="q8a" value="Application Programming Interface">
+            <label for="q8a">Application Programming Interface</label>
+        </li>
+        <li>
+            <input type="radio" name="q8" id="q8b" value="Advanced Programming Interface">
+            <label for="q8b">Advanced Programming Interface</label>
+        </li>
+        <li>
+            <input type="radio" name="q8" id="q8c" value="Application Process Interface">
+            <label for="q8c">Application Process Interface</label>
+        </li>
+        <li>
+            <input type="radio" name="q8" id="q8d" value="Advanced Process Interface">
+            <label for="q8d">Advanced Process Interface</label>
+        </li>
+    </ul>
+</div>
+
+<div class="quiz-question">
+    <p>9. What is the role of version control systems like Git?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q9" id="q9a" value="Managing databases">
+            <label for="q9a">Managing databases</label>
+        </li>
+        <li>
+            <input type="radio" name="q9" id="q9b" value="Managing project versions and history">
+            <label for="q9b">Managing project versions and history</label>
+        </li>
+        <li>
+            <input type="radio" name="q9" id="q9c" value="Writing server-side logic">
+            <label for="q9c">Writing server-side logic</label>
+        </li>
+        <li>
+            <input type="radio" name="q9" id="q9d" value="Creating mobile apps">
+            <label for="q9d">Creating mobile apps</label>
+        </li>
+    </ul>
+</div>
+
+<div class="quiz-question">
+    <p>10. What is the purpose of the "return" statement in functions?</p>
+    <ul class="quiz-options">
+        <li>
+            <input type="radio" name="q10" id="q10a" value="To declare a variable">
+            <label for="q10a">To declare a variable</label>
+        </li>
+        <li>
+            <input type="radio" name="q10" id="q10b" value="To end the function's execution and specify a value to be returned to the caller">
+            <label for="q10b">To end the function's execution and specify a value to be returned to the caller</label>
+        </li>
+        <li>
+            <input type="radio" name="q10" id="q10c" value="To repeat a block of code">
+            <label for="q10c">To repeat a block of code</label>
+        </li>
+        <li>
+            <input type="radio" name="q10" id="q10d" value="To define a function">
+            <label for="q10d">To define a function</label>
+        </li>
+    </ul>
+</div>
+</form>
+<button type="button" onclick="submitQuiz()">Submit</button>
+<p id="result"></p>
+</div>
+</div>
+
+<script>
+const correctAnswers = {
+q1: "Hyper Text Markup Language",
+q2: "JavaScript",
+q3: "Styling web pages",
+q4: "Central Processing Unit",
+q5: "To make a decision in code",
+q6: "_variable",
+q7: "To repeat a block of code a specific number of times",
+q8: "Application Programming Interface",
+q9: "Managing project versions and history",
+q10: "To end the function's execution and specify a value to be returned to the caller"
+};
+
+function submitQuiz() {
+const form = document.getElementById("quiz-form");
+
+let score = 0;
+    
+            if (form.q1.value.toLowerCase() === correctAnswers.q1.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q2.value.toLowerCase() === correctAnswers.q2.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q3.value.toLowerCase() === correctAnswers.q3.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q4.value.toLowerCase() === correctAnswers.q4.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q5.value.toLowerCase() === correctAnswers.q5.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q6.value.toLowerCase() === correctAnswers.q6.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q7.value.toLowerCase() === correctAnswers.q7.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q8.value.toLowerCase() === correctAnswers.q8.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q9.value.toLowerCase() === correctAnswers.q9.toLowerCase()) {
+                score++;
+            }
+    
+            if (form.q10.value.toLowerCase() === correctAnswers.q10.toLowerCase()) {
+                score++;
+            }
+    
+            if (confirm("هل أنت متأكد من أنك انتهيت من الاختبار؟")) {
+        alert(`Your score: ${score} out of ${Object.keys(correctAnswers).length}`);
+    }
+    }
+</script>
+</body>
+</html>
